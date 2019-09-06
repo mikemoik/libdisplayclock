@@ -6,7 +6,7 @@
 //#include <ESP8266WiFi.h>
 //#include <WiFiUdp.h>
 
-#echo PIOENV
+#pragma message (PIOENV)
 
 #define LED_BLINK D7
 
