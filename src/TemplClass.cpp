@@ -1,4 +1,4 @@
-#include "Class.h"
+#include "TemplClass.h"
 
 Templ::TemplClass::TemplClass()
 {
