@@ -1,15 +1,12 @@
 #include <Arduino.h>
-#include <NtpClock.h>
+#include <TemplClass.h>
 
-NtpClock _clock;
+Templ::TemplClass _templ;
 
 void setup() {
-  _clock.setWiFi("mySSID", "myPassphrase");
-  _clock.begin();
 }
 
 void loop() {
-  _clock.refresh();
-  //_clock.blink(); // for alive signal
+  _templ.blink();
   delay(2000);
 }
