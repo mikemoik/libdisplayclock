@@ -1,14 +1,14 @@
 {
-  "name": "libntpclock",
-  "description": "An oled ssd1306 clock which syncs using ntp.",
-  "keywords": ["oled","ntp","misw"],
-  "version": "0.1.2",
+  "name": "libtempl",
+  "description": "Library Template.",
+  "keywords": ["libtempl","misw"],
+  "version": "0.0.1",
   "platforms": "*",
   "frameworks": "arduino",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/mikemoik/libntpclock.git"
+    "url": "https://github.com/mikemoik/pio_libtempl.git"
   },
   "export": {
     "include":
@@ -24,14 +24,6 @@
       "authors":
       [
         "Fabrice Weinberg"
-      ],
-      "version": ">0.0.1"
-    },
-    {
-      "name": "Adafruit GFX Library",
-      "authors":
-      [
-        "Adafruit"
       ],
       "version": ">0.0.1"
     },

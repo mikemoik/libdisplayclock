@@ -1,4 +1,4 @@
-= NtpClock Library for Arduino =
+= Library Template for Platform IO =
 
 TBD
 
