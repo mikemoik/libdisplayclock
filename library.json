@@ -1,0 +1,47 @@
+{
+  "name": "libntpclock",
+  "description": "An oled ssd1306 clock which syncs using ntp.",
+  "keywords": ["oled","ntp","misw"],
+  "version": "0.1.2",
+  "platforms": "*",
+  "frameworks": "arduino",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/mikemoik/libntpclock.git"
+  },
+  "export": {
+    "include":
+    [
+      "*.h",
+      "*.cpp"
+    ]
+  },
+  "dependencies":
+  [
+    {
+      "name": "NTPClient",
+      "authors":
+      [
+        "Fabrice Weinberg"
+      ],
+      "version": ">0.0.1"
+    },
+    {
+      "name": "Adafruit GFX Library",
+      "authors":
+      [
+        "Adafruit"
+      ],
+      "version": ">0.0.1"
+    },
+    {
+      "name": "Adafruit SSD1306",
+      "authors":
+      [
+        "Adafruit"
+      ],
+      "version": ">0.0.1"
+    }
+  ]
+}
