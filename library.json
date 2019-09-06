@@ -16,24 +16,25 @@
       "*.h",
       "*.cpp"
     ]
-  },
-  "dependencies":
-  [
-    {
-      "name": "NTPClient",
-      "authors":
-      [
-        "Fabrice Weinberg"
-      ],
-      "version": ">0.0.1"
-    },
-    {
-      "name": "Adafruit SSD1306",
-      "authors":
-      [
-        "Adafruit"
-      ],
-      "version": ">0.0.1"
-    }
-  ]
+  }
+  //},
+  //"dependencies":
+  //[
+  //  {
+  //    "name": "NTPClient",
+  //    "authors":
+  //    [
+  //      "Fabrice Weinberg"
+  //    ],
+  //    "version": ">0.0.1"
+  //  },
+  //  {
+  //    "name": "Adafruit SSD1306",
+  //    "authors":
+  //    [
+  //      "Adafruit"
+  //    ],
+  //    "version": ">0.0.1"
+  //  }
+  //]
 }
