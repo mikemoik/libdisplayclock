@@ -6,6 +6,8 @@
 //#include <ESP8266WiFi.h>
 //#include <WiFiUdp.h>
 
+#echo PIOENV
+
 #define LED_BLINK D7
 
 namespace Templ
