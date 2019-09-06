@@ -7,8 +7,7 @@
 //#include <WiFiUdp.h>
 #define XSTR(x) STR(x)
 #define STR(x) #x
-#pragma message ("PIOENV : " XSTR(PIOENV))
-
+#pragma message "PIOENV : " XSTR(PIOENV)
 #define LED_BLINK D7
 
 namespace Templ
