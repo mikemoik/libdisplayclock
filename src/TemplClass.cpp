@@ -10,8 +10,9 @@ Templ::TemplClass::TemplClass()
 void Templ::TemplClass::blink(void)
 {
   digitalWrite(PIN_LED, HIGH);
-  delay(100);
+  delay(BLINK_DELAY);
   digitalWrite(PIN_LED, LOW);
+  delay(BLINK_DELAY);
 
   return;
 }

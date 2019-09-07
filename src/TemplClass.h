@@ -33,6 +33,8 @@
 #define PIN_LED   D7
 #define PIN_ BUZZ D8
 
+#BLINK_DELAY 100
+
 namespace Templ
 {
 
