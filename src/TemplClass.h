@@ -30,7 +30,8 @@
 #define D13 13
 #endif
 
-#define LED_BLINK D7
+#define PIN_LED   D7
+#define PIN_ BUZZ D8
 
 namespace Templ
 {

@@ -2,16 +2,16 @@
 
 Templ::TemplClass::TemplClass()
 {
-  pinMode(LED_BLINK, OUTPUT);
+  pinMode(PIN_LED, OUTPUT);
 
   return;
 }
 
 void Templ::TemplClass::blink(void)
 {
-  digitalWrite(LED_BLINK, HIGH);
+  digitalWrite(PIN_LED, HIGH);
   delay(500);
-  digitalWrite(LED_BLINK, LOW);
+  digitalWrite(PIN_LED, LOW);
 
   return;
 }
