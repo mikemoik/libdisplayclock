@@ -1,0 +1,16 @@
+Q: how to instanciate the template repos?
+A: clone template repos:
+   # git clone TEMPL_URL REPOS_NAME
+   # cd REPOS_NAME
+   set origin to the destination repos:
+   # git remote set-url origin DEST_URL
+   first push:
+   # git push -u origin master
+
+Q: how to commit and push changes to the destination repository?
+A: stage everything:
+   # git add .
+   commit:
+   # git commit
+   push to destination origin:
+   # git push
