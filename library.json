@@ -16,5 +16,12 @@
       "*.h",
       "*.cpp"
     ]
-  }
+  },
+  "dependencies":
+  [
+    {
+      "name": "ArduinoMisw",
+      "version": "https://github.com/mikemoik/ArduinoMisw.git#master"
+    }
+  ]  
 }
