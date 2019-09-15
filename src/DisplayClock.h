@@ -28,7 +28,7 @@ namespace Display
     void renderDebug() = 0;
 
     void clear() = 0;
-    void display() = 0;
+    void render() = 0;
 
     void refresh();
 
