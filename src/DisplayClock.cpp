@@ -6,6 +6,16 @@ Display::Clock::Clock()
   return;
 }
 
+void Display::Clock::refresh()
+{
+  clear();
+  renderDebug();
+  renderStatus();
+  renderTime();
+  display();
+  
+  return;
+}
 void Display::Clock::setTime(uint8_t h, uint8_t m)
 {
   _h = h;

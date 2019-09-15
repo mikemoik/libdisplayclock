@@ -23,10 +23,14 @@ namespace Display
     uint8_t getMinutes(void);
     uint8_t getSeconds(void);
 
-    void showTime() = 0;
-    void showStatus() = 0;
-    void showDebug() = 0;
-    void refresh() = 0;
+    void renderTime() = 0;
+    void renderStatus() = 0;
+    void renderDebug() = 0;
+
+    void clear() = 0;
+    void display() = 0;
+
+    void refresh();
 
   private:
     Clock(Clock const&)     = delete;
