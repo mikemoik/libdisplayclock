@@ -14,6 +14,8 @@ namespace Display
 
     void begin() = 0;
 
+    void update();
+
     void setTime(uint8_t h, uint8_t m, uint8_t s);
     void setTime(uint8_t h, uint8_t m);
     void setStatus(String status);
@@ -29,8 +31,6 @@ namespace Display
 
     void clear() = 0;
     void render() = 0;
-
-    void refresh();
 
   private:
     Clock(Clock const&)     = delete;

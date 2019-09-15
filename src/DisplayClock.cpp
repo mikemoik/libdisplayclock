@@ -12,7 +12,7 @@ Display::Clock::Clock()
   return;
 }
 
-void Display::Clock::refresh()
+void Display::Clock::update()
 {
   clear();
   renderDebug();
