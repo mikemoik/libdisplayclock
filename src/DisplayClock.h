@@ -1,24 +1,22 @@
-#ifndef LIB_TEMPL
-#define LIB_TEMPL
+#ifndef DISPLAYCLOCK
+#define DISPLAYCLOCK
 
 #include <ArduinoMisw.h>
 
-#define BLINK_DELAY 100
-
-namespace Templ
+namespace Display
 {
 
-  class TemplClass
+  class Clock
   {
   public:
-    TemplClass();
-    //˜TemplClass(){}
+    Clock();
+    //˜Clock(){}
 
     void blink(void);
 
   private:
-    TemplClass(TemplClass const&)     = delete;
-    void operator=(TemplClass const&) = delete;
+    Clock(Clock const&)     = delete;
+    void operator=(Clock const&) = delete;
   };
 
 };

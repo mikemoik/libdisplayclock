@@ -1,18 +1,13 @@
-#include "TemplClass.h"
+#include "DisplayClock.h"
 
-Templ::TemplClass::TemplClass()
+Display::Clock::Clock()
 {
-  pinMode(PIN_LED, OUTPUT);
 
   return;
 }
 
-void Templ::TemplClass::blink(void)
+void Display::Clock::blink(void)
 {
-  digitalWrite(PIN_LED, HIGH);
-  delay(BLINK_DELAY);
-  digitalWrite(PIN_LED, LOW);
-  delay(BLINK_DELAY);
 
   return;
 }
