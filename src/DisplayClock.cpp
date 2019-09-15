@@ -5,7 +5,10 @@ Display::Clock::Clock()
   _h = 0xFFU;
   _m = 0xFFU;
   _s = 0xFFU;
-  
+
+  _status = "";
+  _debug = "";
+
   return;
 }
 
