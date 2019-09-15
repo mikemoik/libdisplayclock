@@ -1,14 +1,14 @@
 {
-  "name": "libtempl",
-  "description": "Library Template.",
-  "keywords": ["libtempl","misw"],
+  "name": "libdisplayclock",
+  "description": "tbd",
+  "keywords": ["libdisplayclock","misw"],
   "version": "0.0.1",
   "platforms": "*",
   "frameworks": "arduino",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/mikemoik/pio_libtempl.git"
+    "url": "https://github.com/mikemoik/libdisplayclock.git"
   },
   "export": {
     "include":
@@ -23,5 +23,5 @@
       "name": "ArduinoMisw",
       "version": "https://github.com/mikemoik/ArduinoMisw.git#master"
     }
-  ]  
+  ]
 }
