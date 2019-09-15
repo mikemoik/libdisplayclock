@@ -18,7 +18,7 @@ void Display::Clock::update()
   renderDebug();
   renderStatus();
   renderTime();
-  display();
+  render();
 
   return;
 }
