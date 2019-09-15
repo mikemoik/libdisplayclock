@@ -2,7 +2,10 @@
 
 Display::Clock::Clock()
 {
-
+  _h = 0xFFU;
+  _m = 0xFFU;
+  _s = 0xFFU;
+  
   return;
 }
 
@@ -13,7 +16,7 @@ void Display::Clock::refresh()
   renderStatus();
   renderTime();
   display();
-  
+
   return;
 }
 void Display::Clock::setTime(uint8_t h, uint8_t m)
