@@ -4,7 +4,6 @@
 
 namespace Display
 {
-
   class Clock
   {
   public:
