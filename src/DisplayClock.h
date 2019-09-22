@@ -12,7 +12,7 @@ namespace Display
     Clock();
     //˜Clock(){}
 
-    void begin() = 0;
+    virtual void begin() = 0;
 
     void update();
 
@@ -25,12 +25,12 @@ namespace Display
     uint8_t getMinutes(void);
     uint8_t getSeconds(void);
 
-    void renderTime() = 0;
-    void renderStatus() = 0;
-    void renderDebug() = 0;
+    virtual void renderTime() = 0;
+    virtual void renderStatus() = 0;
+    virtual void renderDebug() = 0;
 
-    void clear() = 0;
-    void render() = 0;
+    virtual void clear() = 0;
+    virtual void render() = 0;
 
   private:
     Clock(Clock const&)     = delete;

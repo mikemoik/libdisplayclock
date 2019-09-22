@@ -15,7 +15,7 @@
 
 namespace Display
 {
-  class ClockSSD1306
+  class ClockSSD1306 : public Clock
   {
   public:
     ClockSSD1306();
