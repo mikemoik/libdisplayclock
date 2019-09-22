@@ -9,6 +9,9 @@ _display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET)
 
 void Display::DisplayClockSSD1306::begin()
 {
+  _display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  _display.display();
+
   return;
 }
 
