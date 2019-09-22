@@ -34,6 +34,7 @@ namespace Display
     Clock(Clock const&)     = delete;
     void operator=(Clock const&) = delete;
 
+  protected:
     uint8_t _h,_m,_s;
 
     String _status;
