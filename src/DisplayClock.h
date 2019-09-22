@@ -1,5 +1,4 @@
-#ifndef DISPLAYCLOCK
-#define DISPLAYCLOCK
+#pragma once
 
 #include <ArduinoMisw.h>
 
@@ -43,5 +42,3 @@ namespace Display
   };
 
 };
-
-#endif

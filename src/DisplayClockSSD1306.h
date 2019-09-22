@@ -1,5 +1,4 @@
-#ifndef DISPLAYCLOCK_SSD1306
-#define DISPLAYCLOCK_SSD1306
+#pragma once
 
 #include <DisplayClock.h>
 
@@ -37,5 +36,3 @@ namespace Display
     Adafruit_SSD1306 _display;
   };
 };
-
-#endif
