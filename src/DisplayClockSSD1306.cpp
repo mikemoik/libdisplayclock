@@ -1,13 +1,13 @@
 #include "DisplayClockSSD1306.h"
 
-Display::DisplayClockSSD1306::DisplayClockSSD1306()
+Display::ClockSSD1306::ClockSSD1306()
 :
 _display(OLED_SCREEN_WIDTH, OLED_SCREEN_HEIGHT, &Wire, OLED_RESET)
 {
   return;
 }
 
-void Display::DisplayClockSSD1306::begin()
+void Display::ClockSSD1306::begin()
 {
   _display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   _display.display();
@@ -15,13 +15,7 @@ void Display::DisplayClockSSD1306::begin()
   return;
 }
 
-//void Display::DisplayClockSSD1306::update()
-//{
-//  super::update();
-//  return;
-//}
-
-void Display::DisplayClockSSD1306::renderTime()
+void Display::ClockSSD1306::renderTime()
 {
   char str_time[6];
   char str_sec[3];
@@ -54,7 +48,7 @@ void Display::DisplayClockSSD1306::renderTime()
   return;
 }
 
-void Display::DisplayClockSSD1306::renderStatus()
+void Display::ClockSSD1306::renderStatus()
 {
   if (0 == _status.length())
   {
@@ -68,7 +62,7 @@ void Display::DisplayClockSSD1306::renderStatus()
   return;
 }
 
-void Display::DisplayClockSSD1306::renderDebug()
+void Display::ClockSSD1306::renderDebug()
 {
   if (0 == _debug.length())
   {
@@ -82,14 +76,14 @@ void Display::DisplayClockSSD1306::renderDebug()
   return;
 }
 
-void Display::DisplayClockSSD1306::clear()
+void Display::ClockSSD1306::clear()
 {
   _display.clearDisplay();
 
   return;
 }
 
-void Display::DisplayClockSSD1306::render()
+void Display::ClockSSD1306::render()
 {
   _display.display();
 
