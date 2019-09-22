@@ -2,7 +2,7 @@
 
 Display::DisplayClockSSD1306()
 :
-_display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET)
+_display(OLED_SCREEN_WIDTH, OLED_SCREEN_HEIGHT, &Wire, OLED_RESET)
 {
   return;
 }
@@ -41,17 +41,16 @@ void Display::DisplayClockSSD1306::renderTime()
   // hh:mm
   _display.setTextSize(textsize);
   _display.setTextColor(WHITE);
-  _display.setCursor(SCREEN_WIDTH/2 - 5*textsize*CHAR_PIXEL/2, SCREEN_HEIGHT/2 - textsize*CHAR_PIXEL/2);
+  _display.setCursor(OLED_SCREEN_WIDTH/2 - 5*textsize*OLED_CHAR_PIXEL/2, OLED_SCREEN_HEIGHT/2 - textsize*OLED_CHAR_PIXEL/2);
   _display.setCursor(5, 16);
   _display.println(str_time);
 
   // s
   _display.setTextSize(1);
   _display.setTextColor(WHITE);
-  _display.setCursor(SCREEN_WIDTH - 4*CHAR_PIXEL/2, SCREEN_HEIGHT-CHAR_PIXEL*2);
+  _display.setCursor(OLED_SCREEN_WIDTH - 4*OLED_CHAR_PIXEL/2, OLED_SCREEN_HEIGHT-OLED_CHAR_PIXEL*2);
   _display.println(str_sec);
 
-  return;
   return;
 }
 
@@ -63,7 +62,7 @@ void Display::DisplayClockSSD1306::renderStatus()
   }
   _display.setTextSize(1);
   _display.setTextColor(WHITE);
-  _display.setCursor(SCREEN_WIDTH/2 - _status.length()*CHAR_PIXEL/2, SCREEN_HEIGHT-CHAR_PIXEL*2);
+  _display.setCursor(OLED_SCREEN_WIDTH/2 - _status.length()*OLED_CHAR_PIXEL/2, OLED_SCREEN_HEIGHT-OLED_CHAR_PIXEL*2);
   _display.println(_status);
 
   return;
@@ -77,7 +76,7 @@ void Display::DisplayClockSSD1306::renderDebug()
   }
   _display.setTextSize(1);
   _display.setTextColor(WHITE);
-  _display.setCursor(SCREEN_WIDTH/2 - _debug.length()*CHAR_PIXEL/2, CHAR_PIXEL/2);
+  _display.setCursor(OLED_SCREEN_WIDTH/2 - _debug.length()*OLED_CHAR_PIXEL/2, OLED_CHAR_PIXEL/2);
   _display.println(_debug);
 
   return;
