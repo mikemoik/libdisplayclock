@@ -1,6 +1,6 @@
 #include "DisplayClockSSD1306.h"
 
-Display::DisplayClockSSD1306()
+Display::DisplayClockSSD1306::DisplayClockSSD1306()
 :
 _display(OLED_SCREEN_WIDTH, OLED_SCREEN_HEIGHT, &Wire, OLED_RESET)
 {
