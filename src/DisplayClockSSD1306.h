@@ -21,18 +21,20 @@ namespace Display
     ClockSSD1306();
     //˜ClockSSD1306(){}
 
-    void begin() = 0;
+    void begin();
 
-    void renderTime() = 0;
-    void renderStatus() = 0;
-    void renderDebug() = 0;
+    void renderTime();
+    void renderStatus();
+    void renderDebug();
 
-    void clear() = 0;
-    void render() = 0;
+    void clear();
+    void render();
 
   private:
-    ClockSSD1306(ClockSSD1306 const&)     = delete;
+    ClockSSD1306(ClockSSD1306 const&) = delete;
     void operator=(ClockSSD1306 const&) = delete;
+
+    Adafruit_SSD1306 _display;
   };
 };
 
