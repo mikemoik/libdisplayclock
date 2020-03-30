@@ -23,14 +23,14 @@
       "name": "ArduinoMisw",
       "version": "https://github.com/mikemoik/ArduinoMisw.git#master"
     },
-    {
-      "name": "Adafruit GFX Library",
-      "authors":
-      [
-        "Adafruit"
-      ],
-      "version": ">0.0.1"
-    },
+    //{
+    //  "name": "Adafruit GFX Library",
+    //  "authors":
+    //  [
+    //    "Adafruit"
+    //  ],
+    //  "version": ">0.0.1"
+    //},
     {
       "name": "Adafruit SSD1306",
       "authors":
