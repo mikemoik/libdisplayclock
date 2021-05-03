@@ -12,6 +12,10 @@ void Display::ClockSSD1306::begin()
   _display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   _display.display();
 
+  delay(100);
+
+  _display.splashscreen();
+
   return;
 }
 
