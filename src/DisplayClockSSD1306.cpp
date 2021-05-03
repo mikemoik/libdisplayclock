@@ -80,7 +80,7 @@ void Display::ClockSSD1306::renderDebug()
   return;
 }
 
-void Display::ClockSSD1306::renderStatus()
+void Display::ClockSSD1306::renderSplashscreen()
 {
     _status = "      SPLASH         ";
   renderStatus();
