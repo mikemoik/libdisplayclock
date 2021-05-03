@@ -20,10 +20,6 @@
   "dependencies":
   [
     {
-      "name": "ArduinoMisw",
-      "version": "https://github.com/mikemoik/ArduinoMisw.git#master"
-    },
-    {
       "name": "Adafruit GFX Library",
       "authors":
       [

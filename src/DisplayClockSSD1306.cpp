@@ -76,6 +76,14 @@ void Display::ClockSSD1306::renderDebug()
   return;
 }
 
+void Display::ClockSSD1306::renderStatus()
+{
+    _status = "      SPLASH         ";
+  renderStatus();
+
+  return;
+}
+
 void Display::ClockSSD1306::clear()
 {
   _display.clearDisplay();

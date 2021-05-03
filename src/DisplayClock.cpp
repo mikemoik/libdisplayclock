@@ -22,6 +22,16 @@ void Display::Clock::update()
 
   return;
 }
+
+void Display::Clock::splashscreen()
+{
+  clear();
+  renderSplashscreen();
+  render();
+
+  return;
+}
+
 void Display::Clock::setTime(uint8_t h, uint8_t m)
 {
   _h = h;

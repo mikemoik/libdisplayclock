@@ -25,6 +25,7 @@ namespace Display
     void renderTime();
     void renderStatus();
     void renderDebug();
+    void renderSplashscreen();
 
     void clear();
     void render();

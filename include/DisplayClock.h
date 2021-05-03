@@ -1,7 +1,5 @@
 #pragma once
 
-#include <ArduinoMisw.h>
-
 namespace Display
 {
   class Clock
@@ -12,7 +10,8 @@ namespace Display
 
     virtual void begin() = 0;
 
-    void update();
+    void update(void);
+    void splashscreen(void);
 
     void setTime(uint8_t h, uint8_t m, uint8_t s);
     void setTime(uint8_t h, uint8_t m);
@@ -26,6 +25,7 @@ namespace Display
     virtual void renderTime() = 0;
     virtual void renderStatus() = 0;
     virtual void renderDebug() = 0;
+    virtual void renderSplashscreen() = 0;
 
     virtual void clear() = 0;
     virtual void render() = 0;
