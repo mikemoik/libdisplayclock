@@ -14,7 +14,7 @@ void Display::ClockSSD1306::begin()
 
   delay(100);
 
-  _display.splashscreen();
+  splashscreen();
 
   return;
 }
